@@ -39,39 +39,6 @@
 
 ---
 
-## 📦 快速部署
-
-### 一行部署（推薦）
-
-```bash
-docker run -d \
-  --name tg-bawer \
-  --restart unless-stopped \
-  -e GEMINI_API_KEY=你的_GEMINI_API_KEY \
-  -e GROK_API_KEY=你的_GROK_API_KEY \
-  -e GROK_BASE_URL=你的_GROK_BASE_URL \
-  -e BOT_TOKEN=你的_BOT_TOKEN \
-  -v ~/.tg-bawer:/app/data \
-  ghcr.io/123hi123/tg-bawer:latest
-```
-
-### 使用 Docker Compose
-
-1. 建立 .env 檔案：
-   ```
-   GEMINI_API_KEY=你的_GEMINI_API_KEY
-   GROK_API_KEY=你的_GROK_API_KEY
-   GROK_BASE_URL=你的_GROK_BASE_URL
-   BOT_TOKEN=你的_BOT_TOKEN
-   ```
-
-2. 啟動：
-   ```bash
-   docker-compose up -d
-   ```
-
----
-
 ## 📖 使用方式
 
 ### 基本用法
